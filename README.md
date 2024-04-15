@@ -39,7 +39,6 @@ df
 ```
 ![321847414-aae763cd-3117-4c8e-bf2c-c652a5541541](https://github.com/dharani18p/EXNO-3-DS/assets/118343366/bd3cab7e-1d40-43e5-bedc-15a5bfe99221)
 
-
 ```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
 pm=['Hot','Warm','Cold']
@@ -48,20 +47,18 @@ e1.fit_transform(df[["ord_2"]])
 ```
 ![321847451-b8e416e0-1631-4afc-a303-fba2a3a1febd](https://github.com/dharani18p/EXNO-3-DS/assets/118343366/41c95ca4-d692-4638-a71c-2c9c0eef7025)
 
-
 ```
 df['bo2']=e1.fit_transform(df[["ord_2"]])
 df
 ```
 ![321847486-2cbc1dc1-5234-45a6-a925-840d7e0baee2](https://github.com/dharani18p/EXNO-3-DS/assets/118343366/7c8ae7ba-5a65-4d9d-99a8-1b032f8c74f3)
 
-
 ```
 le=LabelEncoder()
 dfc=df.copy()
 dfc['ord_2']=le.fit_transform(dfc['ord_2'])
 dfc
-
+```
 ![321847550-12ce4365-d23e-4986-941c-b26b61a6bdd7](https://github.com/dharani18p/EXNO-3-DS/assets/118343366/8cd5e10b-46b7-4ff0-bef3-3fbd8b0c44c7)
 
 ```
